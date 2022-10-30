@@ -16,9 +16,15 @@
   
   function findPotentialFriends(existingFriends) {
   
+return function(x) {
+    return !existingFriends.some(function(elem) {
+      return elem === x;
+    });
   }
-  
-  var isNotAFriend = findPotentialFriends( friends );
+}
+var isNotAFriend = findPotentialFriends( friends );
+console.log(isNotAFriend(allUsers[0]));
+
   // isNotAFriend(allUsers[0]); // false
   // isNotAFriend(secondLevelFriends[2]); // true
   
