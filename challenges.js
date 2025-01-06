@@ -7,6 +7,10 @@ that takes the number of overdue days as input and calculates
 the fee ($0.25 per day). Prompt the user to input the
 number of overdue days.
 
+*/
+
+
+/*
 Log the result as:
 
 "The late fee is $[amount]."
@@ -15,6 +19,29 @@ Example:
 User Input: 10
 Output: "The late fee is $2.50."
 */
+
+
+function calculateLteFee(overdue_days){
+   const per_day = 0.25;
+   const total = per_day*overdue_days;
+   return total;
+
+}
+
+const user = prompt("Enter overdue day:");
+const fee = calculateLteFee(user);
+console.log(fee)
+
+
+
+
+
+
+
+
+
+
+
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
