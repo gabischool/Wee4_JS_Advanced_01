@@ -21,40 +21,56 @@ Output: "The late fee is $2.50."
 */
 
 
+// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-function calculateLteFee(overdue_days){
+function calculateLateFee(overdue_days){
    const per_day = 0.25;
    const total = per_day*overdue_days;
    return total;
 
 }
 
-const user = prompt("Enter overdue day:");
-const fee = calculateLteFee(user);
-console.log(`The late fee is ${fee}`)
 
+const user = parseFloat(prompt("Enter overdue day:"));
+const fee = calculateLateFee(user);
 
-
-
-
-
-
-
-
-
-
-
-// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
+if(isNaN(user) || user <= 0){
+               console.log("Invalid number of overdue days.");
+            }else{
+            
+               console.log(`The late fee is ${fee}`)
+            }  
+         
+         
 
 
 // Extra Task:
 // - Convert the function into a function expression.
 
 
+const lateFee = function(overdue_days){
+   const per_day = 0.25;
+   const total = per_day*overdue_days;
+   return total;
+}
+
+
+
+const userInput = parseFloat(prompt("Enter overdue day:"));
+const totalFee = calculateLateFee(userInput);
+
+if(isNaN(userInput) || userInput<= 0){
+               console.log("Invalid number of overdue days.");
+            }else{
+            
+               console.log(`The late fee is ${totalFee}`)
+            } 
+
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
+
+
 
 You are designing a game that asks players for their favorite color. 
 Write a function called `findColorMeaning` that takes a color as input 
@@ -74,11 +90,31 @@ Output: "Red: You are passionate and bold."
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
 
+const findColorMeaning = function(){
+   const name = prompt("Enter your nanme: ")
+   const color = prompt("Enter yory favorite color:");
+   if(color == "Blue"|| color == "blue"){
+   console.log(`${name}, you love calm & peace.` )
+   }
+   else if(color == "Red" || color == "red"){
+      console.log(`${name}, You are passionate and bold.`)
+   }
+   else if(color == "Green" || color == "green"){
+   console.log(`${name}, You are connected to nature.`)
+   }
+      else if(color == "Yellow" || color == "yellow"){
+      console.log(`${name}, You radiate happiness and energy.`)
+   }
+      else{
+         console.log("That's a unique choice!")
+      }
+}
+
+findColorMeaning()
+
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
-
-
 
 /*
 Task 3 : Lawyer's Case Log 🚀🚀🚀🚀
