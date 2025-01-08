@@ -261,9 +261,9 @@ const calculateAverage = (numberONe, NumberTwo, NumberThree)=>{
 const determineGrade = (aveRage)=>{
    if(aveRage >= 90){
       return "A";
-   }else if(aveRage >= 80 || aveRage >=89){
+   }else if(aveRage >= 80 && aveRage >=89){
       return "B";
-   }else if(aveRage >= 70 || aveRage >= 79){
+   }else if(aveRage >= 70 && aveRage >= 79){
       return "C"
    }
    else{
@@ -279,4 +279,18 @@ const generateReport = (Name,num01, num02,num03)=>{
    
 }
 
-generateReport("Abdiqani", 1,2,4)
+//Adding validation to make sure if the programm behaves correctly.To prevent invalid input.
+const validateToscore = (number_score)=>{
+   if(isNaN(number_score)){
+      console.log(`${number_score}, must be a number.`);
+   }else if(number_score <0){
+      console.log(`${number_score}, cannot be negative.`);
+   }
+   else if(number_score > 100){
+      console.log(`${number_score}, it must be under 100.`)
+   }
+   
+}
+
+
+
