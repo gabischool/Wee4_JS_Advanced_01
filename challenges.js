@@ -18,7 +18,12 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
+1. function magiica yahay calculateLateFee samee 
+2. waxaa siisaa parameter ah 'days'
+3. function ka gudihiisa ku xisaabi lacagta qofka laga rabo, adigoo isku dhufanaayo, maalmaha
+iyo lacag oo ah $0.25
+4. adigoo prompt isticmaalaayo, waydii qofka inta maalin uu la soo daahay
+5. wixii prompt-ga kasoo laabto, waxaa u dirtaa function-ka (si argument ah u gali )
 
 // Extra Task:
 // - Convert the function into a function expression.
