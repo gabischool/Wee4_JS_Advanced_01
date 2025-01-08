@@ -116,6 +116,28 @@ findColorMeaning()
 // Extra Task:
 // - Rewrite the function using an arrow function.
 
+   const findlorMeaning = ()=>{
+   const name = prompt("Enter your nanme: ")
+   const color = prompt("Enter yory favorite color:");
+   if(color == "Blue"|| color == "blue"){
+   console.log(`${name}, you love calm & peace.` )
+   }
+   else if(color == "Red" || color == "red"){
+      console.log(`${name}, You are passionate and bold.`)
+   }
+   else if(color == "Green" || color == "green"){
+   console.log(`${name}, You are connected to nature.`)
+   }
+      else if(color == "Yellow" || color == "yellow"){
+      console.log(`${name}, You radiate happiness and energy.`)
+   }
+      else{
+         console.log("That's a unique choice!")
+      }
+}
+
+findlorMeaning()
+
 /*
 Task 3 : Lawyer's Case Log 🚀🚀🚀🚀
 
@@ -131,6 +153,13 @@ Output: "Case #12345: John Doe's case is now logged."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+   const logCase = function(name, caseNumber){
+         console.log(`${name, caseNumber}, case is now logged.`)
+   }
+   const naMe = prompt("Enter your name:");
+   const CaSENumber = prompt("Enter your case number:");
+   const caSe= logCase(naMe, CaSENumber)
+   console.log(caSe)
 
 
 
@@ -158,21 +187,40 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
+   const markAttendance = function(name,isPresent){
+         if(isPresent === true){
+            console.log(`${name}, is present`)
+         }else if(isPresent === false){
+            onsole.log(`${name}, is absent`)
+         }
+   }
+   markAttendance("Abdiqani Hashi", true);
 
 // Extra Task:
 // - Convert the function into a function expression.
 
-
+      
+   const marktendance = (name,isPresent)=>{
+      if(isPresent === true){
+         console.log(`${name}, is present`)
+      }else if(isPresent === false){
+         onsole.log(`${name}, is absent`)
+      }
+   }
+      marktendance("Abdiqani Hashi", false);
 
 /*
+      
 STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
 
-You are a teacher, and you want to automate the creation of detailed grade reports for your class. Write a program that includes the following steps:
+You are a teacher, and you want to automate the creation of detailed grade reports 
+for your class. Write a program that includes the following steps:
 
-1. Write a function called `calculateAverage` that takes three test scores (numbers) as parameters and returns the average of those scores.
+1. Write a function called `calculateAverage` that takes three test scores (numbers) 
+as parameters and returns the average of those scores.
 
-2. Write another function called `determineGrade` that takes the average score as a parameter and returns the letter grade based on the following rules:
+2. Write another function called `determineGrade` that takes the average score as a parameter and 
+  returns the letter grade based on the following rules:
    - "A" for average scores of 90 and above
    - "B" for scores between 80 and 89
    - "C" for scores between 70 and 79
@@ -185,7 +233,8 @@ You are a teacher, and you want to automate the creation of detailed grade repor
    - Returns a full report string in this format:
      "[StudentName] - Average Score: [average], Grade: [letterGrade]"
 
-4. Finally, use the `prompt` function to input the student’s name and three test scores, and display the generated report using `console.log`.
+4. Finally, use the `prompt` function to input the student’s name and three test scores,
+  and display the generated report using `console.log`.
 
 Example:
 User Input:
@@ -197,5 +246,12 @@ Output:
 
 Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
-- Use an arrow function for at least one of the functions.
-*/
+- Use an arrow function for at least one of the functions.*/
+
+
+const calculateAverage = (numberONe, NumberTwo, NumberThree)=>{
+   const totalAverage = (numberONe + NumberTwo + NumberThree)/3;
+   return totalAverage;
+
+}
+console.log(calculateAverage(2,3,4))
