@@ -254,4 +254,29 @@ const calculateAverage = (numberONe, NumberTwo, NumberThree)=>{
    return totalAverage;
 
 }
-console.log(calculateAverage(2,3,4))
+
+
+
+
+const determineGrade = (aveRage)=>{
+   if(aveRage >= 90){
+      return "A";
+   }else if(aveRage >= 80 || aveRage >=89){
+      return "B";
+   }else if(aveRage >= 70 || aveRage >= 79){
+      return "C"
+   }
+   else{
+      return "F"
+   }
+
+}
+
+const generateReport = (Name,num01, num02,num03)=>{
+   const average = calculateAverage(num01,num02,num03);
+   const grade = determineGrade(average)
+   return `${Name}, Average score: ${average}, Grade :${grade}`
+   
+}
+
+generateReport("Abdiqani", 1,2,4)
