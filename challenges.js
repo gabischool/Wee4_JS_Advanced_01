@@ -18,12 +18,40 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+const name = "miirshe";
 
+// () => parenthesis
+// {} => curly brackets
+// [] => square brackets
+
+// function Hello () => function header
+// {
+//    console.log("Hello World!"); method body
+//  }
+
+// functions can take parameters as inputs
+
+// un parameterized function
+// function Hello() {
+//   console.log("Hello World!");
+// }
+
+// Hello()  // invoked \\ calling
+
+//  parameterized function
+// more than one parameter, each parameter separate by comma,
+
+//  arguments
+// Hello("Hello World!", "Miirshe"); // invoked \\ calling
 
 // Extra Task:
 // - Convert the function into a function expression.
 
-
+// function Hello(greeting, name) {
+//   const myName = name; // local scope variable
+//   console.log("My name", myName);
+//   console.log(greeting, name); // concatinations
+// }
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
@@ -45,12 +73,43 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
-
 // Extra Task:
 // - Rewrite the function using an arrow function.
 
+// const  Hello = (greeting, name) => {
+//    console.log(greeting, name);
+// }
+// Hello("Hello World!", "Miirshe"); // invoked \\ calling
 
+
+// Declaration or Expression  Function
+function Hello (){
+}
+
+// anonymous function
+const Hello = function () {
+}
+
+// Arrow Function
+const Hello = () => {
+}
+
+// const Hello = function (greeting, name) {
+//   console.log(greeting, name);
+// };
+
+Hello("Hello World!", "Miirshe"); // invoked \\ calling
+
+function getStudentGrade(marks, name) {
+  if (marks >= 50) {
+    console.log("Bilal: ", name, "Grade: A", "xisabin :", marks);
+  } else {
+    console.log("Grade: F");
+  }
+}
+
+getStudentGrade(90, "Abdikafi");
+getStudentGrade(30, "Hanad");
 
 /*
 Task 3 : Lawyer's Case Log 🚀🚀🚀🚀
@@ -68,11 +127,8 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
-
 // Extra Task:
 // - Rewrite the function as an arrow function.
-
 
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
@@ -94,12 +150,8 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-
-
 // Extra Task:
 // - Convert the function into a function expression.
-
-
 
 /*
 STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
