@@ -20,9 +20,12 @@ Output: "The late fee is $2.50."
 function calculateLateFee(days){
    return days * 0.25;
 }
+
 // console.log("$" + calculateLateFee(10).toFixed(2));
-const Result = "$" + calculateLateFee(10).toFixed(2);
-console.log(Result);
+
+const userInput1 = prompt("please Enter overdue days")
+const Result = calculateLateFee(userInput1).toFixed(2);
+console.log("The late fee is $" + Result);
 
 // Extra Task:
 // - Convert the function into a function expression.
@@ -30,8 +33,8 @@ let calculateLateFee1 = function(days){
    const fixedChargePerDay = 0.25;
    return days * fixedChargePerDay;
 }
-const Result1 = "$" + calculateLateFee1(760).toFixed(2);
-console.log(Result1);
+const Result1 =calculateLateFee1(userInput1).toFixed(2);
+console.log("The late fee is $" + Result1);
 
 
 
