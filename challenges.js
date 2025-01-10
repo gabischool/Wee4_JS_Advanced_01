@@ -114,19 +114,19 @@ Output: "Case #12345: John Doe's case is now logged."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-function logCase(clientName, caseNumber) 
-   function logkCase(clientName,caseNumber){
-if (clientName && caseNumber) { 
-   console.log(`Case #${caseNumber}: ${clientName}'s case is now logged.`); 
- } else if (!clientName) {
-   console.log("Error: Client name is missing.");
- } else if (!caseNumber) {
-   console.log("Error: Case number is missing.");
- } else {
-   console.log("Error: Invalid input."); 
- }
-   }
- logkCase("hani",1234);
+// function logCase(clientName, caseNumber) 
+//    function logkCase(clientName,caseNumber){
+// if (clientName && caseNumber) { 
+//    console.log(`Case #${caseNumber}: ${clientName}'s case is now logged.`); 
+//  } else if (!clientName) {
+//    console.log("Error: Client name is missing.");
+//  } else if (!caseNumber) {
+//    console.log("Error: Case number is missing.");
+//  } else {
+//    console.log("Error: Invalid input."); 
+//  }
+//    }
+//  logkCase("hani",1234);
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
