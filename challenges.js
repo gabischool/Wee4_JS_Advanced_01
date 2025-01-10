@@ -17,13 +17,28 @@ Output: "The late fee is $2.50."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+// function calculateLateFee(overdueDays){
+//    const feePerDay=0.25;
+//    const lateFee=overdueDays * feePerDay;
+//    console.log(`The late fee is ${lateFee}`)
+// }
 
+// const overdueDays=parseInt(prompt('Enter the number of overdue days:'));
 
+// calculateLateFee(overdueDays)
 
 // Extra Task:
 // - Convert the function into a function expression.
 
+// const calculateLateFee=function (overdueDays){
+//    const feePerDay=0.25;
+//    const lateFee=overdueDays * feePerDay;
+//    console.log(`The late fee is ${lateFee}`)
+// }
 
+// const overdueDays=parseInt(prompt('Enter the number of overdue days:'));
+
+// calculateLateFee(overdueDays)
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
@@ -45,11 +60,41 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+// function findColorMeaning (color){
+//    if(color.toLowerCase() == 'blue'){
+//       console.log(`${color}: You love calm and peace.😊`)
+//    }else if(color.toLowerCase() == 'red'){
+//       console.log(`${color}: You are passionate and bold.😗`)
+//    }else if(color.toLowerCase() == 'green'){
+//       console.log(`${color}: You are connected to nature.🌴`)
+//    }else if(color.toLowerCase() == 'yellow'){
+//       console.log(`${color}: You radiate happiness and energy.🤣`)
+//    }else{
+//       console.log(`That's a unique choice!`)
+//    }
+// }
+// const color=prompt('Enter your favourite color 😍')
+// findColorMeaning(color)
 
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
 
+// const findColorMeaning =(color)=>{
+//    if(color.toLowerCase() == 'blue'){
+//       console.log(`${color}: You love calm and peace.😊`)
+//    }else if(color.toLowerCase() == 'red'){
+//       console.log(`${color}: You are passionate and bold.😗`)
+//    }else if(color.toLowerCase() == 'green'){
+//       console.log(`${color}: You are connected to nature.🌴`)
+//    }else if(color.toLowerCase() == 'yellow'){
+//       console.log(`${color}: You radiate happiness and energy.🤣`)
+//    }else{
+//       console.log(`That's a unique choice!`)
+//    }
+// }
+// const color=prompt('Enter your favourite color 😍')
+// findColorMeaning(color)
 
 
 /*
@@ -68,12 +113,22 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+// function logCase(caseName ,caseNumber){
+//  console.log(`Case  #${caseNumber}: ${caseName}'s case is now logged in.`)
+// }
 
+
+// logCase('John Doe',12345)
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
 
-
+// const  logCase=(caseName ,caseNumber)=>{
+//    console.log(`Case  #${caseNumber}: ${caseName}'s case is now logged in.`)
+//   }
+  
+  
+//   logCase('John Doe',12345)
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
 
@@ -94,11 +149,29 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+// function markAttendance(studentName, isPresent){
+//    if(isPresent){
+//       console.log(`${studentName} is present.`)
+//    }else {
+//       console.log(`${studentName} is absent.`)
+//    }
+// }
+
+// markAttendance('Amina', false)
 
 
 // Extra Task:
 // - Convert the function into a function expression.
 
+// const markAttendance=function (studentName, isPresent){
+//    if(isPresent){
+//       console.log(`${studentName} is present.`)
+//    }else {
+//       console.log(`${studentName} is absent.`)
+//    }
+// }
+
+// markAttendance('Amina', false)
 
 
 /*
@@ -135,3 +208,86 @@ Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+
+
+const calculateAverage=(score1,score2,score3)=>{
+      return (score1 + score2 +score3) / 3; 
+}
+
+
+const determineGrade=(averageScore)=>{
+   if(averageScore >=90){
+      return 'A';
+   }else if(averageScore >=80 ){
+      return 'B'
+   }else if(averageScore >=70){
+      return 'C';
+   }else if(averageScore < 70 ){
+      return 'F';
+   }
+}
+
+
+
+const generateReport=(name,score1,score2,score3)=>{
+   const averageScore=calculateAverage(score1,score2,score3);
+   const grade=determineGrade(averageScore)
+   return `${name} - Average Score: ${Math.round(averageScore)}, Grade: ${grade}`;
+}
+
+
+const studentName=prompt(`Enter the student's name:`)
+const score1=parseInt(prompt(`Enter the first score:`))
+const score2=parseInt(prompt(`Enter the second score:`))
+const score3=parseInt(prompt(`Enter the third score:`))
+
+
+const fullReport=generateReport(studentName,score1,score2,score3)
+console.log(fullReport)
+
+
+
+
+// Extra credit:multiple students using loop
+
+// const calculateAverage=(score1,score2,score3)=>{
+//       return (score1 + score2 +score3) / 3; 
+// }
+
+
+// const determineGrade=(averageScore)=>{
+//    if(averageScore >=90){
+//       return 'A';
+//    }else if(averageScore >=80 ){
+//       return 'B'
+//    }else if(averageScore >=70){
+//       return 'C';
+//    }else if(averageScore < 70 ){
+//       return 'F';
+//    }
+// }
+
+
+
+// const generateReport=(name,score1,score2,score3)=>{
+//    const averageScore=calculateAverage(score1,score2,score3);
+//    const grade=determineGrade(averageScore)
+//    return `${name} - Average Score: ${Math.round(averageScore)}, Grade: ${grade}`;
+// }
+
+
+
+
+
+// const numberOfStudents=parseInt(prompt(`Enter the number of students you want`))
+
+// for(let i = 0; i < numberOfStudents; i++){
+// const studentName=prompt(`Enter the student's name:`)
+// const score1=parseInt(prompt(`Enter the first score:`))
+// const score2=parseInt(prompt(`Enter the second score:`))
+// const score3=parseInt(prompt(`Enter the third score:`))
+
+
+// const fullReport=generateReport(studentName,score1,score2,score3)
+// console.log(fullReport)
+// }
