@@ -17,25 +17,28 @@ Output: "The late fee is $2.50."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-// const fixedNumber = 0.25
-// const overdue = prompt("input number overdue")
-// function calculateLateFee(number) 
+// function calculateLateFee(overdue) 
 // {
-//    console.log (`The late fee is $ ${number * fixedNumber}`)
+//   const fixedNumber =0.25
+//   return overdue * fixedNumber
+//    // console.log (`The late fee is $ ${number * fixedNumber}`)
 // }
-
-// calculateLateFee(10)
+// const overdue = parseInt (prompt("input number overdue days"))
+// const lateFee = calculateLateFee(overdue)
+// console.log (`The late fee is ${lateFee}`)
 
 
 // Extra Task:
 // - Convert the function into a function expression.
-// const fixedNumber = 0.25
-// const overdue = prompt("input number overdue")
-// const calculateLateFee = function (number) 
+// const calculateLateFee =function (overdue) 
 // {
-//    console.log (`The late fee is $ ${number * fixedNumber}`)
+//   const fixedNumber =0.25
+//   return overdue * fixedNumber
+//    // console.log (`The late fee is $ ${number * fixedNumber}`)
 // }
-// calculateLateFee(10)
+// const overdue = parseInt (prompt("input number overdue days"))
+// const lateFee = calculateLateFee(overdue)
+// console.log (`The late fee is ${lateFee}`)
 
 
 /*
@@ -204,3 +207,40 @@ Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+// function calculateAverage(number1,number2,number3) {
+//    return (number1+number2+number3) / 3;
+//  }
+     
+//  //determineGrade
+//  function determineGrade(average){
+//    if (average >=90){
+//      return "A";
+//    }
+//    else if (average >=80 && average <=89){
+//      return "B";
+//    }
+//    else if (average >=70 && average <=79){
+//      return "C";
+//    }
+//    else {
+//      return "F";
+//    }
+//  }
+ 
+//  //Generate Report
+//  function generateReport(studentName,number1,number2,number3){
+//    const average = calculateAverage (number1,number2,number3);
+//    const letterGrade = determineGrade(average);
+//    return `${studentName} - Average Score: ${average},Grade ${letterGrade}`
+//  }
+//  //Prompt users
+//  const studentName = prompt("Enter the studnet's name.")
+//  const number1=parseInt(prompt("Enter the first number"))
+//  const number2=parseInt(prompt("Enter the second number"))
+//  const number3=parseInt(prompt("Enter the third number"))
+ 
+//  //generate Report
+//  const report = generateReport(studentName, number1,number2,number3);
+//  console.log(report)
+ 
+ 
