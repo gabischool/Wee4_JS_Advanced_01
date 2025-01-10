@@ -147,12 +147,13 @@ Output: "Amina is present."
 // Extra Task:
 // - Convert the function into a function expression.
 
- const markAttendance=(studentName,isPresent)
+ const markAttendance= function(studentName,isPresent){
   if(isPresent){
-  console.log(studentName ,present)
+  console.log(studentName ,"present")
  } else{
-  console.log("studentName, absent")
-}     markAttendance("amina",true);
+  console.log(studentName, "absent")
+}  }   
+     markAttendance("amina",true);
  
 
 /*
