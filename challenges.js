@@ -235,6 +235,13 @@ console.log('F')}
    - Returns a full report string in this format:
      "[StudentName] - Average Score: [average], Grade: [letterGrade]"
 
+     function generateReport(name,test1,test2,test3){
+     const average_Score=average(score1,score2,score3)
+     const grade=determinegrade(average_Score)
+
+     console.log(name 'Average Score':average_Score 'grade': grade)
+     }
+
 4. Finally, use the `prompt` function to input the student’s name and three test scores, and display the generated report using `console.log`.
 
 Example:
