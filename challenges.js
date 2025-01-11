@@ -16,7 +16,16 @@ User Input: 10
 Output: "The late fee is $2.50."
 */
 
-// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+const calculateLateFee = function (overdueDays) {
+   const lateFee = overdueDays * 0.25;
+   console.log("The late fee is $" + lateFee.toFixed(2) + ".");
+ };
+ 
+ // Prompt user to input number of overdue days
+ const overdueDays = prompt("Enter the number of overdue days:");
+ 
+ // Call the function with user input
+ calculateLateFee(parseFloat(overdueDays));
 
 
 
@@ -43,13 +52,26 @@ User Input: "Red"
 Output: "Red: You are passionate and bold."
 */
 
-// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
-
-
-// Extra Task:
-// - Rewrite the function using an arrow function.
-
+function findColorMeaning(color) {
+   color = color.toLowerCase();
+   switch (color) {
+       case 'blue':
+           console.log("Blue: You love calm and peace.");
+           break;
+       case 'red':
+           console.log("Red: You are passionate and bold.");
+           break;
+       case 'green':
+           console.log("Green: You are connected to nature.");
+           break;
+       case 'yellow':
+           console.log("Yellow: You radiate happiness and energy.");
+           break;
+       default:
+           console.log("That's a unique choice!");
+           break;
+   }
+}
 
 
 /*
@@ -66,13 +88,18 @@ Input: logCase("John Doe", 12345)
 Output: "Case #12345: John Doe's case is now logged."
 */
 
-// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function logCase(clientName, caseNumber) {
+   return "Case #" + caseNumber + ": " + clientName + "'s case is now logged.";
+
+   console.log(logCase("John Doe", 12345));
+}
 
 
+// Extra Task: Convert the function into a function expression
 
-// Extra Task:
-// - Rewrite the function as an arrow function.
-
+const logCase = function(clientName, caseNumber) {
+   return "Case #" + caseNumber + ": " + clientName + "'s case is now logged.";
+};
 
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
@@ -92,13 +119,24 @@ Input: markAttendance("Amina", true)
 Output: "Amina is present."
 */
 
-// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
-
+function markAttendance(studentName, isPresent) {
+   if (isPresent) {
+       return studentName + " is present.";
+   } else {
+       return studentName + " is absent.";
+   }
+}
 
 // Extra Task:
 // - Convert the function into a function expression.
 
+const markAttendance = function(studentName, isPresent) {
+   if (isPresent) {
+       return studentName + " is present.";
+   } else {
+       return studentName + " is absent.";
+   }
+};
 
 
 /*
@@ -135,3 +173,48 @@ Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+
+// Function to calculate average of three scores
+function calculateAverage(score1, score2, score3) {
+   return (score1 + score2 + score3) / 3;
+}
+
+// Function to determine letter grade
+function determineGrade(average) {
+   if (average >= 90) return "A";
+   if (average >= 80) return "B";
+   if (average >= 70) return "C";
+   return "F";
+}
+
+// Function to generate the full report
+function generateReport(name, score1, score2, score3) {
+   const average = calculateAverage(score1, score2, score3);
+   const grade = determineGrade(average);
+   return name + " - Average Score: " + average.toFixed(2) + ", Grade: " + grade;
+}
+
+// Main program with user input
+function main() {
+   const name = prompt("Enter student name:");
+   const score1 = Number(prompt("Enter score 1:"));
+   const score2 = Number(prompt("Enter score 2:"));
+   const score3 = Number(prompt("Enter score 3:"));
+   
+   const report = generateReport(name, score1, score2, score3);
+   console.log(report);
+}
+
+// For multiple students (Extra Credit)
+function generateMultipleReports() {
+   const numStudents = Number(prompt("How many students?"));
+   
+   for(let i = 0; i < numStudents; i++) {
+       console.log("Student " + (i + 1) + ":");
+       main();
+       console.log("-------------------");
+   }
+}
+
+// Arrow function version of calculateAverage (Extra Credit)
+const calculateAverageArrow = (score1, score2, score3) => (score1 + score2 + score3) / 3;
