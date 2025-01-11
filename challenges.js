@@ -20,7 +20,7 @@ Output: "The late fee is $2.50."
 let overdueDays = prompt("Enter the number of overdue days");
 function calculateLateFee(days) {
   let fee = days * 0.25;
-  console.log("The late fee is $", fee);
+  console.log("The late fee is $ ", fee);
 }
 calculateLateFee(overdueDays);
 
