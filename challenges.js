@@ -138,7 +138,7 @@ logCase("John Doe", 12345);
 // - Rewrite the function as an arrow function.
 
 const logCase = (name, caseNumber) => {
-   onsole.log('Case #{caseNumber}: ${name} case is now logged.');
+   console.log('Case #{caseNumber}: ${name} case is now logged.');
 }
 logCase("John Doe", 1234);
 
