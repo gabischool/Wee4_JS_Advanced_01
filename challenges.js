@@ -16,12 +16,24 @@ User Input: 10
 Output: "The late fee is $2.50."
 */
 
-// ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+// // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+// function calculateLateFee(days){
+//    const overdueAmount=days*0.25;
+// console.log(`the late fee is $${overdueAmount}`)
+// }
+// const message=+prompt('please enter the days ')
+// calculateLateFee(message)
 
 
 
-// Extra Task:
-// - Convert the function into a function expression.
+// // Extra Task:
+// // - Convert the function into a function expression.
+// const calculate=function(days){
+//    const overdueAmount=days*0.25;
+// console.log(`the late fee is $${overdueAmount}`)
+// }
+// const message1=+prompt('please enter the days ')
+// calculate(message1)
 
 
 
@@ -45,10 +57,48 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+// function findColorMeaning(color){
+// if(color==='blue'){
+//    console.log('you love calm and peace')
+// }
+// else if(color==='red'){
+//    console.log('you are passionate and bold')
+// }
+// else if(color==='green'){
+//    console.log('you are connected to nature')
+// }
+// else if(color==='yellow'){
+//    console.log('you radiate happiness and energy')
+// }
+// else{
+//    console.log('thats a unique color')
+// }
+// }
+// const chooseColor=prompt('please choose a color red,yellow,green or blue')
+// findColorMeaning(chooseColor)
+// // Extra Task:
+// // - Rewrite the function using an arrow function.
 
+// const findcolorMeaning=(color)=>{
+//    if(color==='blue'){
+//       console.log('you love calm and peace')
+//    }
+//    else if(color==='red'){
+//       console.log('you are passionate and bold')
+//    }
+//    else if(color==='green'){
+//       console.log('you are connected to nature')
+//    }
+//    else if(color==='yellow'){
+//       console.log('you radiate happiness and energy')
+//    }
+//    else{
+//       console.log('thats a unique color')
+//    }
+// }
+// const chooseColor1=prompt('please choose a color red,yellow,green or blue')
+// findcolorMeaning(chooseColor1)
 
-// Extra Task:
-// - Rewrite the function using an arrow function.
 
 
 
@@ -68,11 +118,25 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function logCase(number,name){
+   console.log(`Case ${number}:${name}'s case is now logged `)
+}
+const logNumber1=prompt('enter the case number ')
+const logName1=prompt('enter the  client name')
+logCase(logNumber1,logName1)
+
+
 
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
-
+const logcase=(number,name){
+   console.log(`Case ${number}:${name}'s case is now logged `)
+ 
+}
+const logNumber2=prompt('enter the case number ')
+const logName2=prompt('enter the  client name')
+logCase(logNumber2,logName2)
 
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
