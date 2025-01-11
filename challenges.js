@@ -118,25 +118,25 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-function logCase(number,name){
-   console.log(`Case ${number}:${name}'s case is now logged `)
-}
-const logNumber1=prompt('enter the case number ')
-const logName1=prompt('enter the  client name')
-logCase(logNumber1,logName1)
+// function logCase(number,name){
+//    console.log(`Case ${number}:${name}'s case is now logged `)
+// }
+// const logNumber1=prompt('enter the case number ')
+// const logName1=prompt('enter the  client name')
+// logCase(logNumber1,logName1)
 
 
 
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
-const logcase=(number,name){
-   console.log(`Case ${number}:${name}'s case is now logged `)
+// const logcase=(number,name)=>{
+//    console.log(`Case ${number}:${name}'s case is now logged `)
  
-}
-const logNumber2=prompt('enter the case number ')
-const logName2=prompt('enter the  client name')
-logCase(logNumber2,logName2)
+// }
+// const logNumber2=prompt('enter the case number ')
+// const logName2=prompt('enter the  client name')
+// logCase(logNumber2,logName2)
 
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
@@ -158,12 +158,40 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function markAttendance1(name,isPresent){
+   isPresent=(isPresent==='true');
+   if(isPresent){
+      console.log(name +' is present')
+   }
+   else{
+      console.log(name +' is absent')
+
+   }
+}
+   const stName1=prompt('name')
+   const track1=prompt('true or false')
+   
+markAttendance1(stName1,track1)
+
+
 
 
 // Extra Task:
 // - Convert the function into a function expression.
+const markAttendance2=function(name,isPresent){
+   isPresent=(isPresent==='true');
+   if(isPresent){
+      console.log(name +' is present')
+   }
+   else{
+      console.log(name +' is absent')
 
-
+   }
+}
+const stName2=prompt('name')
+   const track2=prompt('true or false')
+   
+markAttendance2(stName2,track2)
 
 /*
 STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
@@ -172,11 +200,33 @@ You are a teacher, and you want to automate the creation of detailed grade repor
 
 1. Write a function called `calculateAverage` that takes three test scores (numbers) as parameters and returns the average of those scores.
 
+
+const average=function calculateAverage(score1,score2,score3){
+
+return (score1+score2+score3)/3
+}
+const av=average(45,65,78)
+
 2. Write another function called `determineGrade` that takes the average score as a parameter and returns the letter grade based on the following rules:
    - "A" for average scores of 90 and above
    - "B" for scores between 80 and 89
    - "C" for scores between 70 and 79
    - "F" for scores below 70
+const determineGrade=(av){
+
+if(av>90){
+console.log('A')}
+else if(av>80 && av<=89){
+console.log('B')}
+else if(av>70 && av<=79){
+console.log('C')}
+
+else if (av<70){
+console.log('F')}
+}
+
+
+
 
 3. Write a third function called `generateReport` that:
    - Takes a student's name and three test scores as parameters.
