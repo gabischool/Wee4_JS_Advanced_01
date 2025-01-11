@@ -16,13 +16,13 @@ User Input: 10
 Output: "The late fee is $2.50."
 */
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-// let overdueDays = prompt("Enter the number of overdue days")
-// function calculateLateFee(days){
 
-//    let fee = days * 0.25 ;
-//    console.log("The late fee is $", fee)
-// }
-// calculateLateFee(overdueDays);
+let overdueDays = prompt("Enter the number of overdue days");
+function calculateLateFee(days) {
+  let fee = days * 0.25;
+  console.log("The late fee is $", fee);
+}
+calculateLateFee(overdueDays);
 
 // Extra Task:
 // - Convert the function into a function expression.
@@ -133,7 +133,7 @@ Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-// function markAttendance(studentName){
+//  function markAttendance(studentName){
 // let isPresent = true;
 // if(isPresent == true){
 //    console.log(studentName , " is present.")
@@ -161,36 +161,69 @@ Output: "Amina is present."
 //    markAttendance("Amina");
 
 /*
-STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
+// STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
 
-You are a teacher, and you want to automate the creation of detailed grade reports for your class. Write a program that includes the following steps:
+// You are a teacher, and you want to automate the creation of detailed grade reports for your class. Write a program that includes the following steps:
 
-1. Write a function called `calculateAverage` that takes three test scores (numbers) as parameters and returns the average of those scores.
+// 1. Write a function called `calculateAverage` that takes three test scores (numbers) as parameters and returns the average of those scores.
 
-2. Write another function called `determineGrade` that takes the average score as a parameter and returns the letter grade based on the following rules:
-   - "A" for average scores of 90 and above
-   - "B" for scores between 80 and 89
-   - "C" for scores between 70 and 79
-   - "F" for scores below 70
+// 2. Write another function called `determineGrade` that takes the average score as a parameter and returns the letter grade based on the following rules:
+//    - "A" for average scores of 90 and above
+//    - "B" for scores between 80 and 89
+//    - "C" for scores between 70 and 79
+//    - "F" for scores below 70
 
-3. Write a third function called `generateReport` that:
-   - Takes a student's name and three test scores as parameters.
-   - Uses `calculateAverage` to calculate the average score.
-   - Uses `determineGrade` to find the letter grade.
-   - Returns a full report string in this format:
-     "[StudentName] - Average Score: [average], Grade: [letterGrade]"
+// 3. Write a third function called `generateReport` that:
+//    - Takes a student's name and three test scores as parameters.
+//    - Uses `calculateAverage` to calculate the average score.
+//    - Uses `determineGrade` to find the letter grade.
+//    - Returns a full report string in this format:
+//      "[StudentName] - Average Score: [average], Grade: [letterGrade]"
 
-4. Finally, use the `prompt` function to input the student’s name and three test scores, and display the generated report using `console.log`.
+// 4. Finally, use the `prompt` function to input the student’s name and three test scores, and display the generated report using `console.log`.
 
-Example:
-User Input:
-Name: Amina
-Scores: 85, 90, 78
+// Example:
+// User Input:
+// Name: Amina
+// Scores: 85, 90, 78
 
-Output:
-"Amina - Average Score: 84.33, Grade: B"
+// Output:
+// "Amina - Average Score: 84.33, Grade: B"
 
 Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+
+// function calculateAverage(score1, score2, score3) {
+//   let average = (score1 + score2 + score3) / 3;
+//   return average;
+// }
+
+// const determineGrade = function (average) {
+//   if (average >= 90) {
+//     return "A";
+//   } else if (average >= 80 && average <= 89) {
+//     return "B";
+//   } else if (average >= 70 && average <= 79) {
+//     return "C";
+//   } else {
+//     return "F";
+//   }
+// };
+
+// const generateReport = (studentName, score1, score2, score3) => {
+//   let average = calculateAverage(score1, score2, score3);
+//   let letterGrade = determineGrade(average);
+
+//   return `${studentName} - Average Score: ${average.toFixed(
+//     2
+//   )}, Grade: ${letterGrade}`;
+// };
+
+// let studentName = prompt("Enter the student's name:");
+// let score1 = parseFloat(prompt("Enter the first test score:"));
+// let score2 = parseFloat(prompt("Enter the second test score:"));
+// let score3 = parseFloat(prompt("Enter the third test score:"));
+
+// console.log(generateReport(studentName, score1, score2, score3));
