@@ -18,10 +18,24 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function calculateLateFee(numdays){
+   return numdays * 0.25 ;
+}
+const days = parseInt(prompt("How many days is the book due?"), 10);
+const fee = calculateLateFee(days);
+console.log("The late fee is $" + fee.toFixed(2));
+
+
 
 
 // Extra Task:
 // - Convert the function into a function expression.
+
+const calculateLateFee = (numdays) => numdays* 0.25 ;
+
+const days = parseInt(prompt("How many days is the book due?"), 10);
+const fee = calculateLateFee(days);
+console.log("The late fee is $" + fee.toFixed(2));
 
 
 
@@ -45,10 +59,55 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function findColorMeaning (color){
+
+if (color === "blue"){
+   console.log("You love calm and peace.");
+}
+   else if (color === "Red"){
+      console.log("You are passionate and bold.");
+   }
+   else if(color === "Green"){
+      console.log("You are connected to nature.");
+   } 
+   else if (color === "Yellow" ){
+      console.log("You radiate happiness and energy.");
+      
+   } else {
+      console.log("That's a unique choice!");
+   }
+}
+const usercolor =  prompt("Enter your favorite color");
+findColorMeaning(usercolor);
+
+
+   
+
+
 
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
+const findColorMeaning = (color)=>{
+
+   if (color === "blue"){
+      console.log("You love calm and peace.");
+   }
+      else if (color === "red"){
+         console.log("You are passionate and bold.");
+      }
+      else if(color === "green"){
+         console.log("You are connected to nature.");
+      } 
+      else if (color === "yellow" ){
+         console.log("You radiate happiness and energy.");
+         
+      } else {
+         console.log("That's a unique choice!");
+      }
+   };
+   const userColor =  prompt("Enter your favorite color") .toLowerCase();
+   findColorMeaning(userColor);
 
 
 
@@ -67,11 +126,23 @@ Output: "Case #12345: John Doe's case is now logged."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function logCase(name, caseNumber) {
+   console.log('Case #{caseNumber}: ${name} case is now logged.');
+}
+logCase("John Doe", 12345);
+
 
 
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
+
+const logCase = (name, caseNumber) => {
+   console.log('Case #{caseNumber}: ${name} case is now logged.');
+}
+logCase("John Doe", 1234);
+
+
 
 
 /*
@@ -93,11 +164,29 @@ Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function markAttendance(studentname , isPresent){
+   if (isPresent) {
+      console.log('{studentName} is Present.');
+   }
+      else {
+         console.log('{studentName} is absent.' );
+      }
+}
 
 
 
 // Extra Task:
 // - Convert the function into a function expression.
+const markAttendance = (studentname, isprasent ) =>{
+   if (isPresent) {
+      console.log('{studentName} is Present.');
+   }
+      else {
+         console.log('{studentName} is absent.' );
+      }
+};
+   
+
 
 
 
@@ -135,3 +224,35 @@ Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+function calculateAverage(Score1, Score2, Score3){
+   return (Score1 + Score2 + Score3) / 3;
+}
+function determineGrade(average){
+   if( average >= 90){
+      return "A";
+   }
+   else if (average >= 80 ){
+      return "B";
+   }
+   else if (average >= 70){
+      return"C";
+
+   }
+   else  {
+
+      return "F";
+   }
+}
+function generateReport (Studentname , Score1, Score2, Score3){
+   const average = calculateAverage(Score1, Score2, Score3);
+   const grade = determineGrade(average);
+   return studentName + " - Average Score : " + average + " , Grade: " + grade;
+}
+
+const studentName = prompt("Enter the student's name:")
+const Score1 = parseInt(prompt("Enter the first score:"));
+const Score2 = parseInt(promp0t("Enter the second score:"));
+const Score3 = parseInt(prompt("Enter the third score:"));
+
+const report = generateReport(Studentname, Score1, Score2, Score3);
+console.log(report);
