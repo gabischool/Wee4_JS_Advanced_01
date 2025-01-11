@@ -18,12 +18,28 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function calculateLateFee(days){
+   let fee=days*0.25;
+   console.log("the late fee is"+fee);
+   
+}
+let days=prompt("fadlan gali tirada maalmaha dib usoo celinta:");
+calculateLateFee(days);
+ 
+
 
 
 // Extra Task:
 // - Convert the function into a function expression.
 
 
+const calculateLate = function(days){
+   let fee=days*0.25;
+   console.log("the late fee is"+fee);
+  
+}
+  days = prompt("fadlan gali tirada maalmaha dib usoo celinta:");
+calculateLate(days);
 
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
@@ -44,6 +60,31 @@ Output: "Red: You are passionate and bold."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+
+let color=prompt("please write down here your favorite color")
+function findColorMeaning(color){
+if(color=="blue"){
+
+   console.log("you love calm and peace");}
+   else if (color=="red")
+   {
+      console.log("You are passionate and bold");
+   }
+   else if(color=="gree"){
+      console.log("You are connected to nature.");
+   }
+   
+   else if(color=="yellow"){
+      console.log("You radiate happiness and energy");
+   }
+   else{
+      console.log("That's a unique choice!");
+   }
+}
+   findColorMeaning(color)
+
+
+
 
 
 
@@ -72,6 +113,13 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
+
+
+function logCase(clientName,caseNumber){
+   console.log("case# 12345: john Doe' case is now logged.");
+}
+logCase()
+
 
 
 /*
