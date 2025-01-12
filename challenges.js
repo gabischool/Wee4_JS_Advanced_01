@@ -158,40 +158,40 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-function markAttendance1(name,isPresent){
-   isPresent=(isPresent==='true');
-   if(isPresent){
-      console.log(name +' is present')
-   }
-   else{
-      console.log(name +' is absent')
+// function markAttendance1(name,isPresent){
+//    isPresent=(isPresent==='true');
+//    if(isPresent){
+//       console.log(name +' is present')
+//    }
+//    else{
+//       console.log(name +' is absent')
 
-   }
-}
-   const stName1=prompt('name')
-   const track1=prompt('true or false')
+//    }
+// }
+//    const stName1=prompt('name')
+//    const track1=prompt('true or false')
    
-markAttendance1(stName1,track1)
+// markAttendance1(stName1,track1)
 
 
 
 
 // Extra Task:
 // - Convert the function into a function expression.
-const markAttendance2=function(name,isPresent){
-   isPresent=(isPresent==='true');
-   if(isPresent){
-      console.log(name +' is present')
-   }
-   else{
-      console.log(name +' is absent')
+// const markAttendance2=function(name,isPresent){
+//    isPresent=(isPresent==='true');
+//    if(isPresent){
+//       console.log(name +' is present')
+//    }
+//    else{
+//       console.log(name +' is absent')
 
-   }
-}
-const stName2=prompt('name')
-   const track2=prompt('true or false')
+//    }
+// }
+// const stName2=prompt('name')
+//    const track2=prompt('true or false')
    
-markAttendance2(stName2,track2)
+// markAttendance2(stName2,track2)
 
 /*
 STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
@@ -200,32 +200,11 @@ You are a teacher, and you want to automate the creation of detailed grade repor
 
 1. Write a function called `calculateAverage` that takes three test scores (numbers) as parameters and returns the average of those scores.
 
-
-const average=function calculateAverage(score1,score2,score3){
-
-return (score1+score2+score3)/3
-}
-const av=average(45,65,78)
-
 2. Write another function called `determineGrade` that takes the average score as a parameter and returns the letter grade based on the following rules:
    - "A" for average scores of 90 and above
    - "B" for scores between 80 and 89
    - "C" for scores between 70 and 79
    - "F" for scores below 70
-const determineGrade=(av){
-
-if(av>90){
-console.log('A')}
-else if(av>80 && av<=89){
-console.log('B')}
-else if(av>70 && av<=79){
-console.log('C')}
-
-else if (av<70){
-console.log('F')}
-}
-
-
 
 
 3. Write a third function called `generateReport` that:
@@ -235,12 +214,7 @@ console.log('F')}
    - Returns a full report string in this format:
      "[StudentName] - Average Score: [average], Grade: [letterGrade]"
 
-     function generateReport(name,test1,test2,test3){
-     const average_Score=average(score1,score2,score3)
-     const grade=determinegrade(average_Score)
-
-     console.log(name 'Average Score':average_Score 'grade': grade)
-     }
+   
 
 4. Finally, use the `prompt` function to input the student’s name and three test scores, and display the generated report using `console.log`.
 
@@ -252,7 +226,44 @@ Scores: 85, 90, 78
 Output:
 "Amina - Average Score: 84.33, Grade: B"
 
+
+
+
 Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+const average=function calculateAverage(score1,score2,score3){
+
+   return ((score1+score2+score3)/3).toFixed(2)
+   }
+   const av=average(100,95,78)
+   console.log(av);
+    determineGrade=(average)=>{
+
+      if(average>90){
+      return('A')}
+      else if(average>80 && average<=89){
+      return('B')}
+      else if(average>70 && average<=79){
+      return('C')}
+      
+      else if (average<70){
+      return('F')}
+      }
+      determineGrade(average)
+      
+      function generateReport(name,score1,score2,score3){
+         const average_Score=average(score1,score2,score3)
+         console.log(average_Score);
+         const grade=determineGrade(average_Score)
+    
+         console.log(name +'Average Score :'+average_Score +' grade :'+ grade)
+         }
+         generateReport(" shukri's ",90,90,100)
+
+
+
+
+      
+       
