@@ -13,26 +13,34 @@ Log the result as:
 
 Example:
 User Input: 10
-Output: "The late fee is $2.50."
-*/
+Output: "The late fee is $2.50."*/
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+// let overduedays=prompt("number of overdue days")
+function calculateLateFee(overdueDays){ 
+   const fees=overdueDays *0.25;
+ console.log("the late fee is $",fees)
+}
+calculateLateFee(overduedays)
+// Extra Task: 
 
-
-
-// Extra Task:
 // - Convert the function into a function expression.
+let overdueDays = prompt("Number of overdue days");
+const calculateLateFee = function(days) {
+    const fee = days * 0.25;
+    console.log(`The late fee is $${fee}`);
+};
+
+calculateLateFee(overdueDays);
 
 
+//Task 2 : Favorite Color Finder 🚀🚀🚀🚀
 
-/*
-Task 2 : Favorite Color Finder 🚀🚀🚀🚀
+//You are designing a game that asks players for their favorite color. 
+//Write a function called `findColorMeaning` that takes a color as input 
+//(prompt the user) and logs the following meanings:
 
-You are designing a game that asks players for their favorite color. 
-Write a function called `findColorMeaning` that takes a color as input 
-(prompt the user) and logs the following meanings:
-
-- "Blue: You love calm and peace."
+/*- "Blue: You love calm and peace."
 - "Red: You are passionate and bold."
 - "Green: You are connected to nature."
 - "Yellow: You radiate happiness and energy."
@@ -40,17 +48,43 @@ Write a function called `findColorMeaning` that takes a color as input
 
 Example:
 User Input: "Red"
-Output: "Red: You are passionate and bold."
-*/
+Output: "Red: You are passionate and bold."*/
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function findColorMeaning()
+const color = prompt("What's your favorite color?");
+if(color==="blue"){
+   console.log("Blue: You love calm and peace")
+}
+else if (color==="red"){
+   console.log("Red: You are passionate and bold")
 
+}
+else if(color==="green"){
+   console.log("You are connected to nature")
+}
+else if(color==="yellow"){
+   console.log("You radiate happiness and energy")
+}
 
+else{
+   console.log("That's a unique choice")
+}
+findColorMeaning()
 
 // Extra Task:
-// - Rewrite the function using an arrow function.
+// - Rewrite the function using an arrow function.*/
 
-
+const logcase = (clientName, caseNumber) => {
+   console.log("caselogged");
+   console.log(`clientName: ${clientName}`);
+   console.log(`caseNumber: ${caseNumber}`);
+ };
+ 
+ logcase("AHMED", "C4567");
+ logcase("amina", "c4567");
+ logcase("xaliimo", "d6789");
+ 
 
 /*
 Task 3 : Lawyer's Case Log 🚀🚀🚀🚀
@@ -67,12 +101,29 @@ Output: "Case #12345: John Doe's case is now logged."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function logcase(clientName,caseNumber){
+   console.log("caselogged")
+   console.log("clientName":{clientName})
+   console.log("caseNumber":{caseNumber})
 
+}
+
+logcase("AHMED","C4567")
+logcase("amina","c4567")
+logcase("xaliimo","d6789")
 
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
+const logcase = (clientName, caseNumber) => {
+  console.log("caselogged");
+  console.log(`clientName: ${clientName}`);
+  console.log(`caseNumber: ${caseNumber}`);
+};
 
+logcase("AHMED", "C4567");
+logcase("amina", "c4567");
+logcase("xaliimo", "d6789");
 
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
@@ -88,17 +139,35 @@ If the student is absent, log:
 "[studentName] is absent."
 
 Example:
-Input: markAttendance("Amina", true)
-Output: "Amina is present."
-*/
+Input: markAttendance("Amina", true) 
+Output: "Amina is present."*/
+
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+function markAttendance(studentName, isPresent){
+   if(isPresent){
+      console.log(`${studentName}is present.`);
+   
+   }
+   else{
+      console.log(`${studentName} is absent.`);
+   }
+      
+   }
 
-
+markAttendance("ahmed",true)
 
 // Extra Task:
 // - Convert the function into a function expression.
-
+const markAttendance=function(studentName, isPresent){
+   if(isPresent){
+      console.log(`${studentName}is present.`);
+   
+   }
+   else{
+      console.log(`${studentName} is absent.`);
+   }
+}
 
 
 /*
@@ -134,4 +203,4 @@ Output:
 Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
-*/
+*/ 
