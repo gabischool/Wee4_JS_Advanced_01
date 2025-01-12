@@ -17,23 +17,23 @@ Output: "The late fee is $2.50."
 */
 
 // // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-// function calculateLateFee(days){
-//    const overdueAmount=days*0.25;
-// console.log(`the late fee is $${overdueAmount}`)
-// }
-// const message=+prompt('please enter the days ')
-// calculateLateFee(message)
+function calculateLateFee(days){
+   const overdueAmount=days*0.25;
+console.log(`the late fee is $${overdueAmount}`)
+ }
+ const message=+prompt('please enter the days ')
+ calculateLateFee(message)
 
 
 
 // // Extra Task:
 // // - Convert the function into a function expression.
-// const calculate=function(days){
-//    const overdueAmount=days*0.25;
-// console.log(`the late fee is $${overdueAmount}`)
-// }
-// const message1=+prompt('please enter the days ')
-// calculate(message1)
+ const calculate=function(days){
+   const overdueAmount=days*0.25;
+console.log(`the late fee is $${overdueAmount}`)
+ }
+const message1=+prompt('please enter the days ')
+ calculate(message1)
 
 
 
@@ -57,47 +57,47 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-// function findColorMeaning(color){
-// if(color==='blue'){
-//    console.log('you love calm and peace')
-// }
-// else if(color==='red'){
-//    console.log('you are passionate and bold')
-// }
-// else if(color==='green'){
-//    console.log('you are connected to nature')
-// }
-// else if(color==='yellow'){
-//    console.log('you radiate happiness and energy')
-// }
-// else{
-//    console.log('thats a unique color')
-// }
-// }
-// const chooseColor=prompt('please choose a color red,yellow,green or blue')
-// findColorMeaning(chooseColor)
+ function findColorMeaning(color){
+if(color==='blue'){
+    console.log('you love calm and peace')
+ }
+ else if(color==='red'){
+    console.log('you are passionate and bold')
+ }
+ else if(color==='green'){
+    console.log('you are connected to nature')
+ }
+else if(color==='yellow'){
+    console.log('you radiate happiness and energy')
+ }
+ else{
+    console.log('thats a unique color')
+ }
+ }
+ const chooseColor=prompt('please choose a color red,yellow,green or blue')
+ findColorMeaning(chooseColor)
 // // Extra Task:
 // // - Rewrite the function using an arrow function.
 
-// const findcolorMeaning=(color)=>{
-//    if(color==='blue'){
-//       console.log('you love calm and peace')
-//    }
-//    else if(color==='red'){
-//       console.log('you are passionate and bold')
-//    }
-//    else if(color==='green'){
-//       console.log('you are connected to nature')
-//    }
-//    else if(color==='yellow'){
-//       console.log('you radiate happiness and energy')
-//    }
-//    else{
-//       console.log('thats a unique color')
-//    }
-// }
-// const chooseColor1=prompt('please choose a color red,yellow,green or blue')
-// findcolorMeaning(chooseColor1)
+ const findcolorMeaning=(color)=>{
+    if(color==='blue'){
+      console.log('you love calm and peace')
+    }
+    else if(color==='red'){
+       console.log('you are passionate and bold')
+    }
+    else if(color==='green'){
+      console.log('you are connected to nature')
+   }
+    else if(color==='yellow'){
+       console.log('you radiate happiness and energy')
+   }
+    else{
+       console.log('thats a unique color')
+   }
+}
+ const chooseColor1=prompt('please choose a color red,yellow,green or blue')
+ findcolorMeaning(chooseColor1)
 
 
 
@@ -118,25 +118,25 @@ Output: "Case #12345: John Doe's case is now logged."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-// function logCase(number,name){
-//    console.log(`Case ${number}:${name}'s case is now logged `)
-// }
-// const logNumber1=prompt('enter the case number ')
-// const logName1=prompt('enter the  client name')
-// logCase(logNumber1,logName1)
+ function logCase(number,name){
+   console.log(`Case ${number}:${name}'s case is now logged `)
+ }
+ const logNumber1=prompt('enter the case number ')
+ const logName1=prompt('enter the  client name')
+ logCase(logNumber1,logName1)
 
 
 
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
-// const logcase=(number,name)=>{
-//    console.log(`Case ${number}:${name}'s case is now logged `)
+ const logcase=(number,name)=>{
+    console.log(`Case ${number}:${name}'s case is now logged `)
  
-// }
-// const logNumber2=prompt('enter the case number ')
-// const logName2=prompt('enter the  client name')
-// logCase(logNumber2,logName2)
+ }
+ const logNumber2=prompt('enter the case number ')
+ const logName2=prompt('enter the  client name')
+ logCase(logNumber2,logName2)
 
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
@@ -158,40 +158,40 @@ Output: "Amina is present."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
-// function markAttendance1(name,isPresent){
-//    isPresent=(isPresent==='true');
-//    if(isPresent){
-//       console.log(name +' is present')
-//    }
-//    else{
-//       console.log(name +' is absent')
+ function markAttendance1(name,isPresent){
+   isPresent=(isPresent==='true');
+  if(isPresent){
+       console.log(name +' is present')
+    }
+    else{
+       console.log(name +' is absent')
 
-//    }
-// }
-//    const stName1=prompt('name')
-//    const track1=prompt('true or false')
+   }
+ }
+   const stName1=prompt('name')
+    const track1=prompt('true or false')
    
-// markAttendance1(stName1,track1)
+ markAttendance1(stName1,track1)
 
 
 
 
 // Extra Task:
 // - Convert the function into a function expression.
-// const markAttendance2=function(name,isPresent){
-//    isPresent=(isPresent==='true');
-//    if(isPresent){
-//       console.log(name +' is present')
-//    }
-//    else{
-//       console.log(name +' is absent')
+ const markAttendance2=function(name,isPresent){
+   isPresent=(isPresent==='true');
+    if(isPresent){
+      console.log(name +' is present')
+   }
+   else{
+      console.log(name +' is absent')
 
-//    }
-// }
-// const stName2=prompt('name')
-//    const track2=prompt('true or false')
+    }
+ }
+ const stName2=prompt('name')
+    const track2=prompt('true or false')
    
-// markAttendance2(stName2,track2)
+ markAttendance2(stName2,track2)
 
 /*
 STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
