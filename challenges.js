@@ -135,3 +135,91 @@ Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
 - Use an arrow function for at least one of the functions.
 */
+// Function Declaration
+function calculateLateFee(overdueDays) {
+   const fee = overdueDays * 0.25;
+   console.log(`The late fee is $${fee.toFixed(2)}.`);
+}
+
+// Prompt user for input
+const overdueDays = parseInt(prompt("Enter the number of overdue days: "), 10);
+calculateLateFee(overdueDays);
+//Task 2: 
+// Function Declaration
+function findColorMeaning(color) {
+   switch (color.toLowerCase()) {
+       case "blue":
+           console.log("Blue: You love calm and peace.");
+           break;
+       case "red":
+           console.log("Red: You are passionate and bold.");
+           break;
+       case "green":
+           console.log("Green: You are connected to nature.");
+           break;
+       case "yellow":
+           console.log("Yellow: You radiate happiness and energy.");
+           break;
+       default:
+           console.log("That's a unique choice!");
+   }
+}
+
+// Prompt user for input
+const favoriteColor = prompt("What is your favorite color?");
+findColorMeaning(favoriteColor);
+
+//Task 3:
+// Function Declaration
+function logCase(clientName, caseNumber) {
+   console.log(`Case #${caseNumber}: ${clientName}'s case is now logged.`);
+}
+
+// Example Usage
+logCase("John Doe",12345);
+
+//Task 4:
+function markAttendance(studentName, isPresent) {
+   if (isPresent) {
+       console.log(`${studentName} is present.`);
+   } else {
+       console.log(`${studentName} is absent.`);
+   }
+}
+
+// Example Usage
+markAttendance("Amina",true);
+
+//Stretch task: grade report generator
+// Step 1: Calculate Average
+function calculateAverage(score1, score2, score3) {
+   return (score1 + score2 + score3) / 3;
+}
+
+// Step 2: Determine Grade
+const determineGrade = (average) => {
+   if (average >= 90) return "A";
+   if (average >= 80) return "B";
+   if (average >= 70) return "C";
+   return "F";
+};
+
+// Step 3: Generate Report
+function generateReport(studentName, score1, score2, score3) {
+   const average = calculateAverage(score1, score2, score3);
+   const grade = determineGrade(average);
+   return `${studentName} - Average Score: ${average.toFixed(2)}, Grade: ${grade}`;
+}
+
+// Step 4: Prompt user for input and display report
+const studentName = prompt("Enter the student's name:");
+const score1 = parseFloat(prompt("Enter the first test score:"));
+const score2 = parseFloat(prompt("Enter the second test score:"));
+const score3 = parseFloat(prompt("Enter the third test score:"));
+//one extar
+const gabi = ['abdishakur','miirshe']
+gabi.push('ali key')
+gabi.unshift('duraan')
+console.log(gabi)
+gabi.shift();
+console.log('maclimiinta gabi school',gabi)
