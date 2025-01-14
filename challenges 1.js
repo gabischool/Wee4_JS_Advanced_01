@@ -18,7 +18,19 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+function calculateLateFee(Days) {
+   let feePerDay = 0.25;
+   let totalFee = Days * feePerDay;
+   console.log(`The late fee is $${totalFee.toFixed(2)}.`);
+}
 
+let input = prompt("Enter the overdue days:");
+let Days = Number(input);
+
+if (Days >= 0) {
+   calculateLateFee(Days);
+} else {
+   console.log("Invalid input.");}
 
 // Extra Task:
 // - Convert the function into a function expression.
