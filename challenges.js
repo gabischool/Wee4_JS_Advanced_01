@@ -17,11 +17,23 @@ Output: "The late fee is $2.50."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+// Task 1
+
+function calculateLatefee (days, amount) {
+  console.log("The late fee is", days * amount);
+  
+
+}
+const days = prompt("days overdue")
+const amount = prompt("amount")
+
+calculateLatefee (days, amount)
 
 
 
 // Extra Task:
 // - Convert the function into a function expression.
+
 
 
 
@@ -45,7 +57,26 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+//Task 2
+function findColorMeaning (color, logs) {
+   if (color.toLowerCase() === "blue") {
+      console.log("Blue : You calm and peace");
+   } else if (color.toLowerCase() === "red") {
+      console.log("Red: You are pasionate and bold");
+   } else if (color.toLowerCase() === "yellow") {
+      console.log("Yellow: You radiate happiness and energy");
+   } else if (color.toLowerCase() === "green") {
+      console.log("Green: You are connected to nature");
+   } else {
+      console.log("That's a unique choice!");
+   }
+}
+const color = prompt("favColor")
+const logs = prompt("colorLogs")
 
+
+
+findColorMeaning (color, logs)
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
@@ -67,7 +98,15 @@ Output: "Case #12345: John Doe's case is now logged."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+// Task 3 
 
+function logCase(name, caseNumber) {
+   //console.log("Case" + " " +  caseNumber + ": " + name + " " + "case is now logged")
+   console.log(`Case ${caseNumber}: ${name} case is now logged`)
+}
+
+
+logCase("Faarax", 710 )
 
 
 // Extra Task:
@@ -93,7 +132,19 @@ Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+// Task 4 
 
+function markAttendance(studentName, isPresent) {
+
+ if (isPresent ) {
+   console.log(studentName + " is Present")
+ } else {
+   console.log(studentName + " Is Absent")
+}
+
+}
+
+markAttendance ("Xalimo", true) 
 
 
 // Extra Task:
@@ -133,5 +184,4 @@ Output:
 
 Extra Credit:
 - Extend the program to accept multiple students' names and scores and generate a report for each student using a loop.
-- Use an arrow function for at least one of the functions.
-*/
+- Use an arrow function for at least one of the functions.*/
