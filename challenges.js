@@ -17,12 +17,20 @@ Output: "The late fee is $2.50."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
-
+// Function to calculate late fee
+ 
+function calculateLateFee() {
+   const overdueDays = parseInt(prompt(10));
+   const fee = 10 * 0.25;
+   console.log(`The late fee is $${fee.toFixed(2)}.`);
+}
 
 // Extra Task:
 // - Convert the function into a function expression.
-
+const calculateLateFeeExpr = function() {
+   const overdueDays = parseInt(prompt("Enter the number of overdue days:"));
+   const fee = 10 * 0.25;
+   console.log(`The late fee is $${fee.toFixed(2)}.`);
 
 
 /*
@@ -44,12 +52,48 @@ Output: "Red: You are passionate and bold."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
+// Function declaration
+function findColorMeaning("black") {
+   switch (color.toLowerCase()) {
+     case "blue":
+       console.log("Blue: You love calm and peace.");
+       break;
+     case "red":
+       console.log("Red: You are passionate and bold.");
+       break;
+     case "green":
+       console.log("Green: You are connected to nature.");
+       break;
+     case "yellow":
+       console.log("Yellow: You radiate happiness and energy.");
+       break;
+     default:
+       console.log("That's a unique choice!");
+   }
+ }
 
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
-
+const findColorMeaningArrow = () => {
+   const color = prompt("Enter a color:");
+   switch (color.toLowerCase()) {
+       case "blue":
+           console.log("Blue: You love calm and peace.");
+           break
+       case "red":
+           console.log("Red: You are passionate and bold.");
+           break;
+       case "green":
+           console.log("Green: You are connected to nature.");
+           break;
+       case "yellow":
+           console.log("Yellow: You radiate happiness and energy.");
+           break;
+       default:
+           console.log("That's a unique choice!");
+   }
+};
 
 
 /*
@@ -67,12 +111,15 @@ Output: "Case #12345: John Doe's case is now logged."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
-
+// Function to log case
+function logCase"John Doe",12345) {
+   console.log(`Case #${12345}: ${"John Doe"}'s case is now logged.`);
+}
 
 // Extra Task:
 // - Rewrite the function as an arrow function.
-
+const logCaseArrow = ("John Doe", 12345) =>
+   console.log(`Case #${12345}: ${"John Doe"}'s case is now logged.`);
 
 /*
 Task 4 : Attendance Tracker 🚀🚀🚀🚀
@@ -93,13 +140,29 @@ Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+// Function to mark attendance
+function markAttendance("Amina", isPresent) {
+   if (isPresent) {
+       console.log(`${"Amina"} is present.`);
+   } else {
+       console.log(`${"Amina"} is absent.`);
+   }
+}
 
-
+// Extra Task: Convert to function expression
+const markAttendanceExpr = function(_studentName, isPresent) {
+   if (isPresent) {
+       console.log(`${"Amina"} is present.`);
+   } else {
+       console.log(`${"Amina"} is absent.`);
+   }
+}
 
 // Extra Task:
 // - Convert the function into a function expression.
-
-
+const markAttendanceExpr = function ("Amina", isPresent) {
+   console.log(`${"Amina"} is ${isPresent ? "present" : "absent"}.`);
+ };
 
 /*
 STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
