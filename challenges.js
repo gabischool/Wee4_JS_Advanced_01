@@ -18,13 +18,38 @@ Output: "The late fee is $2.50."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+/*function latefee(calculatelate)
+{
+   const feePerDay = 0.25;
+   const overdue = calculatelate *
+   feePerDay;
+   console.log(overdue);
+}
 
+const calculatelate = Number(prompt("You can put here something"))
 
+latefee(calculatelate);
+*/
+/*
+function latefee(calculatelate){
+   const overdue = calculatelate * 0.25;
+   console.log(overdue);
+}
+const calculatelate = Number(prompt("enter the number of late days"));
+latefee(calculatelate);
+*/
 // Extra Task:
 // - Convert the function into a function expression.
 
+//function expression2
+/*const latefee = function(calculatelate){
+   const overdue = calculatelate * 0.25;
+   console.log(overdue);
+}
+const calculatelate = Number(prompt("enter the number of late days"));
+latefee(calculatelate);
 
-
+*/
 /*
 Task 2 : Favorite Color Finder 🚀🚀🚀🚀
 
@@ -45,11 +70,27 @@ Output: "Red: You are passionate and bold."
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
 
+/*function findColorMeaning(favoriteColor){
 
+if (favoriteColor  == "Blue")
+   {console.log("You love calm and peace")}
+
+   else if(favoriteColor  == "Red")
+   {console.log("You are passionate and bold")}
+
+   else if(favoriteColor == "Green")
+      {console.log("You are connected to nature")}
+
+   else if(favoriteColor == "Yallow")
+      {console:log("You radiate happiness and energy")}
+
+   else{console.log("That's a unique choice!")}}
+
+const favoriteColor = prompt("choice your favorite color");
+findColorMeaning(favoriteColor)*/
 
 // Extra Task:
 // - Rewrite the function using an arrow function.
-
 
 
 /*
@@ -67,7 +108,10 @@ Output: "Case #12345: John Doe's case is now logged."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
-
+/*function logCase(casenum, name){
+   console.log("Hallo", casenum, name, "this case is now logged")
+ }
+ logCase("Casenumber: 2525", "Mohamed Ali:")*/
 
 
 // Extra Task:
@@ -93,13 +137,29 @@ Output: "Amina is present."
 */
 
 // ✍️ ✍️ ✍️ ✍️ Write the function here ✍️ ✍️ ✍️ ✍️
+/*
+function markAttendance(studentStatus, name) {
+   if (studentStatus == true) {
+      console.log(`${name} is present`);
+   }
+else{console.log("the is absent")}
+}
+markAttendance(true, "Mohamed")
 
-
-
+*/
 // Extra Task:
 // - Convert the function into a function expression.
-
-
+/*
+//function expression
+const markAttendance = function(studentStatus, name){
+   if (studentStatus == false)
+      {
+         console.log(`${name} is present`);
+      }
+         else{console.log("the is absent")}
+}
+markAttendance(true, "Mohamed")
+      */
 
 /*
 STRETCH TASK: Student Grade Report Generator 🏈🏈🏈🏈
